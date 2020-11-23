@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Grawdevelopment.Backend;
 
 namespace GrawGoConsole
 {
@@ -18,15 +19,24 @@ namespace GrawGoConsole
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e)
 
         {
             navigationPage1.Caption = "Station";
             navigationPage2.Caption = "Flights";
             navigationPage3.Caption = "Users";
-            
-            
 
+            var fireBase = new FirebaseLib();
+            var result = await fireBase.LoginAsync();
+            if (result)
+            {
+                Console.WriteLine(fireBase.GetUser().Email);
+                var stations = await fireBase.GetStations();
+                foreach (var item in stations)
+                {
+                    Console.WriteLine(item.Name);
+                }
+            }
 
         }
         
