@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\StationDatasource.cs" />
+    <Compile Include="Controller\UserDatasource.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +76,7 @@
       <DependentUpon>GrawGO.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Station.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\ControlGrid.cs">
@@ -82,6 +84,12 @@
     </Compile>
     <Compile Include="View\ControlGrid.Designer.cs">
       <DependentUpon>ControlGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ControlGridUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ControlGridUser.Designer.cs">
+      <DependentUpon>ControlGridUser.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -101,6 +109,9 @@
     </Compile>
     <EmbeddedResource Include="View\ControlGrid.resx">
       <DependentUpon>ControlGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ControlGridUser.resx">
+      <DependentUpon>ControlGridUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">

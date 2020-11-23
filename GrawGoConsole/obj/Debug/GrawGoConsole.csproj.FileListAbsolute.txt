@@ -219,3 +219,5 @@ c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\obj\Debug\GrawGoConsole.
 c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\obj\Debug\GrawGoConsole.exe
 c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\obj\Debug\GrawGoConsole.pdb
 c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\obj\Debug\GrawGoConsole.View.ControlGrid.resources
+C:\Users\KuhnenS\source\repos\GrawGoConsole\GrawGoConsole\obj\Debug\GrawGoConsole.View.ControlGrid.resources
+C:\Users\KuhnenS\source\repos\GrawGoConsole\GrawGoConsole\obj\Debug\GrawGoConsole.View.ControlGridUser.resources
