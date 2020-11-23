@@ -33,8 +33,9 @@
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
-            this.grawGO2 = new GrawGoConsole.GrawGO();
+            this.controlGrid2 = new GrawGoConsole.View.ControlGrid();
             this.grawGO3 = new GrawGoConsole.GrawGO();
+            this.controlGrid1 = new GrawGoConsole.View.ControlGrid();
             this.grawGO1 = new GrawGoConsole.GrawGO();
             this.navigationPage3.SuspendLayout();
             this.navigationPage2.SuspendLayout();
@@ -47,6 +48,7 @@
             // 
             this.editFormUserControl1.SetBoundPropertyName(this.navigationPage3, "");
             this.navigationPage3.Caption = "navigationPage3";
+            this.navigationPage3.Controls.Add(this.controlGrid1);
             this.navigationPage3.Controls.Add(this.grawGO1);
             this.navigationPage3.Controls.Add(this.editFormUserControl1);
             this.navigationPage3.Name = "navigationPage3";
@@ -71,7 +73,7 @@
             // 
             this.editFormUserControl1.SetBoundPropertyName(this.navigationPage1, "");
             this.navigationPage1.Caption = "navigationPage1";
-            this.navigationPage1.Controls.Add(this.grawGO2);
+            this.navigationPage1.Controls.Add(this.controlGrid2);
             this.navigationPage1.Name = "navigationPage1";
             this.navigationPage1.Size = new System.Drawing.Size(755, 409);
             // 
@@ -98,20 +100,20 @@
             this.navigationPage2,
             this.navigationPage3});
             this.navigationPane1.RegularSize = new System.Drawing.Size(934, 482);
-            this.navigationPane1.SelectedPage = this.navigationPage3;
+            this.navigationPane1.SelectedPage = this.navigationPage1;
             this.navigationPane1.Size = new System.Drawing.Size(934, 482);
             this.navigationPane1.TabIndex = 0;
             this.navigationPane1.Text = "navigationPane1";
             this.navigationPane1.TransitionType = DevExpress.Utils.Animation.Transitions.Fade;
             // 
-            // grawGO2
+            // controlGrid2
             // 
-            this.editFormUserControl1.SetBoundPropertyName(this.grawGO2, "");
-            this.grawGO2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grawGO2.Location = new System.Drawing.Point(0, 0);
-            this.grawGO2.Name = "grawGO2";
-            this.grawGO2.Size = new System.Drawing.Size(755, 409);
-            this.grawGO2.TabIndex = 0;
+            this.editFormUserControl1.SetBoundPropertyName(this.controlGrid2, "");
+            this.controlGrid2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controlGrid2.Location = new System.Drawing.Point(0, 0);
+            this.controlGrid2.Name = "controlGrid2";
+            this.controlGrid2.Size = new System.Drawing.Size(755, 409);
+            this.controlGrid2.TabIndex = 0;
             // 
             // grawGO3
             // 
@@ -121,6 +123,15 @@
             this.grawGO3.Name = "grawGO3";
             this.grawGO3.Size = new System.Drawing.Size(755, 409);
             this.grawGO3.TabIndex = 0;
+            // 
+            // controlGrid1
+            // 
+            this.editFormUserControl1.SetBoundPropertyName(this.controlGrid1, "");
+            this.controlGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controlGrid1.Location = new System.Drawing.Point(0, 0);
+            this.controlGrid1.Name = "controlGrid1";
+            this.controlGrid1.Size = new System.Drawing.Size(755, 409);
+            this.controlGrid1.TabIndex = 2;
             // 
             // grawGO1
             // 
@@ -159,8 +170,9 @@
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage2;
         private GrawGO grawGO3;
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage1;
-        private GrawGO grawGO2;
         private DevExpress.XtraBars.Navigation.NavigationPane navigationPane1;
+        private View.ControlGrid controlGrid1;
+        private View.ControlGrid controlGrid2;
     }
 }
 
