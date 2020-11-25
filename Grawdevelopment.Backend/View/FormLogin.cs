@@ -37,7 +37,7 @@ namespace Grawdevelopment.Backend.View
 
             }
         }
-        Action<FirebaseLib> _resultAction;
+        //Action<FirebaseLib> _resultAction;
         private FirebaseLoginController _firebaseLoginController;
 
         public FormLogin()

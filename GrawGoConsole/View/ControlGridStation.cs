@@ -12,14 +12,14 @@ using GrawGoConsole.Controller;
 
 namespace GrawGoConsole.View
 {
-    public partial class ControlGrid : DevExpress.XtraEditors.XtraUserControl
+    public partial class ControlGridStation : DevExpress.XtraEditors.XtraUserControl
     {
-        public ControlGrid()
+        public ControlGridStation()
         {
             InitializeComponent();
         }
 
-        private void ControlGrid_Load(object sender, EventArgs e)
+        private async void ControlGrid_Load(object sender, EventArgs e)
         {
             if (DesignMode)
                 return;
@@ -31,6 +31,7 @@ namespace GrawGoConsole.View
             gridView1.OptionsView.EnableAppearanceEvenRow = true;
             gridView1.Appearance.EvenRow.BackColor = Color.DimGray;
             var dataSource = new StationDatasource();
+            await dataSource.GetData();
             gridControl1.DataSource = dataSource.GetDataSource();
         }
     }

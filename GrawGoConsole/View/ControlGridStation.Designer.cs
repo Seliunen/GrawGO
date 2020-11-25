@@ -1,6 +1,6 @@
 ﻿namespace GrawGoConsole.View
 {
-    partial class ControlGrid
+    partial class ControlGridStation
     {
         /// <summary> 
         /// Required designer variable.
@@ -129,6 +129,7 @@
             // gridColumn7
             // 
             this.gridColumn7.Caption = "Altitude";
+            this.gridColumn7.DisplayFormat.FormatString = "0";
             this.gridColumn7.FieldName = "Altitude";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
@@ -142,12 +143,12 @@
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 7;
             // 
-            // ControlGrid
+            // ControlGridStation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gridControl1);
-            this.Name = "ControlGrid";
+            this.Name = "ControlGridStation";
             this.Size = new System.Drawing.Size(723, 485);
             this.Load += new System.EventHandler(this.ControlGrid_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

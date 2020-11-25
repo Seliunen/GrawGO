@@ -70,7 +70,7 @@ namespace Grawdevelopment.Backend
             }
             catch (Exception ex)
             {
-                //
+                Console.WriteLine(ex);
             }
             finally
             {

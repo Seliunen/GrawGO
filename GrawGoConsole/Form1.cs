@@ -35,6 +35,7 @@ namespace GrawGoConsole
                 foreach (var item in stations)
                 {
                     Console.WriteLine(item.Name);
+                    
                 }
             }
 
