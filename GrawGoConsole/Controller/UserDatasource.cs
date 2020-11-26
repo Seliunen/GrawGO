@@ -1,5 +1,5 @@
-﻿using Grawdevelopment.Backend;
-using GrawGoConsole.Model;
+﻿using Firebase.Auth;
+using Grawdevelopment.Backend;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -39,22 +39,13 @@ namespace GrawGoConsole.Controller
 
             if (result)
             {
-                var user = fireBase.GetUser();
 
-                //foreach (var item1 in user)
-                //{
-                //    _user.Add(item1);
-                //}
+                var user = await fireBase.GetUsers();
 
-
-                var item = new User();
-                item.Id = user.LocalId;
-                item.EMail = user.Email;
-                item.Name = user.LastName;
-                item.firstname = user.DisplayName;
-                item.IsEmailVerified = user.IsEmailVerified;
-                _user.Add(item);
-
+                foreach (var item in user)
+                {
+                    _user.Add(item);
+                }
             }
         }
 
