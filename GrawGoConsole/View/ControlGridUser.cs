@@ -19,7 +19,7 @@ namespace GrawGoConsole.View
             InitializeComponent();
         }
 
-        private void ControlGridUser_Load(object sender, EventArgs e)
+        private async void ControlGridUser_Load(object sender, EventArgs e)
         {
             if (DesignMode)
                 return;
@@ -31,6 +31,7 @@ namespace GrawGoConsole.View
             gridView1.OptionsView.EnableAppearanceEvenRow = true;
             gridView1.Appearance.EvenRow.BackColor = Color.DimGray;
             var dataSource = new UserDatasource();
+            await dataSource.GetData();
             gridControl1.DataSource = dataSource.GetDataSource();
         }
     }

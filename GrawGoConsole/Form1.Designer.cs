@@ -33,7 +33,7 @@
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
-            this.controlGrid2 = new GrawGoConsole.View.ControlGrid();
+            this.controlGrid2 = new GrawGoConsole.View.ControlGridStation();
             this.grawGO3 = new GrawGoConsole.GrawGO();
             this.controlGridUser1 = new GrawGoConsole.View.ControlGridUser();
             this.navigationPage3.SuspendLayout();
@@ -159,7 +159,7 @@
         private GrawGO grawGO3;
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage1;
         private DevExpress.XtraBars.Navigation.NavigationPane navigationPane1;
-        private View.ControlGrid controlGrid2;
+        private View.ControlGridStation controlGrid2;
         private View.ControlGridUser controlGridUser1;
     }
 }

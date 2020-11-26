@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrawGoConsole", "GrawGoConsole\GrawGoConsole.csproj", "{B280DDFA-DBA3-4AF2-BBD6-16B9F02C0A4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grawdevelopment.Backend", "..\Grawdevelopment.Backend\Grawdevelopment.Backend.csproj", "{A20E2D18-5945-4166-A879-17F15F81AE3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grawdevelopment.Backend", "Grawdevelopment.Backend\Grawdevelopment.Backend.csproj", "{A20E2D18-5945-4166-A879-17F15F81AE3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -230,6 +230,8 @@ namespace Grawdevelopment.Backend
                 Altitude = item.Object.Altitude,
                 Longitude = item.Object.Longitude,
                 Latitude = item.Object.Latitude,
+                ImageName = item.Object.ImageName,
+                ImageUrl = item.Object.ImageUrl,
                 Key = item.Key
             })
                 .ToList();
@@ -451,7 +453,7 @@ namespace Grawdevelopment.Backend
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine(ex);
             }
             return null;
         }
