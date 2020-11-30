@@ -15,14 +15,12 @@ using DevExpress.XtraGrid.Views.Grid;
 using GrawGoConsole.Controller;
 using System.Drawing.Imaging;
 using Grawdevelopment.Backend;
+using GrawDevelopment.Common.Splash;
 
 namespace GrawGoConsole.View
 {
     public partial class ControlGridStation : DevExpress.XtraEditors.XtraUserControl
     {
-        RepositoryItemPictureEdit ri;
-        private string _url = "";
-
         Dictionary<String, Bitmap> iconsCache = new Dictionary<string, Bitmap>();
         public ControlGridStation()
         {
@@ -40,22 +38,21 @@ namespace GrawGoConsole.View
             gridView1.OptionsView.ShowIndicator = false;
             gridView1.OptionsView.EnableAppearanceEvenRow = true;
             gridView1.Appearance.EvenRow.BackColor = Color.LightGray;
-            // gridView1.OptionsView.RowAutoHeight = true;
             gridView1.Columns["Image"].OptionsColumn.FixedWidth = true;
             gridView1.Columns["Image"].Width = 100;
             gridView1.RowHeight = 100;
-            //gridView1.CustomRowCellEdit += new DevExpress.XtraGrid.Views.Grid.CustomRowCellEditEventHandler(gridView1_CustomRowCellEdit);
 
             gridView1.CustomUnboundColumnData += gridView1_CustomUnboundColumnData;
-
+            ProgressHud.Shared.Initialize(this,"");
             var dataSource = new StationDatasource();
             await dataSource.GetData();
             gridControl1.DataSource = dataSource.GetDataSource();
+            ProgressHud.Shared.Stop();
         }
 
-        async void gridView1_CustomUnboundColumnData(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDataEventArgs e)
+        void gridView1_CustomUnboundColumnData(object sender,
+            DevExpress.XtraGrid.Views.Base.CustomColumnDataEventArgs e)
         {
-            //throw new NotImplementedException();
             var item = e.Row as StationDataObject;
             if (item == null)
                 return;
@@ -67,8 +64,6 @@ namespace GrawGoConsole.View
                 return;
             }
 
-            // e.Value = await GetImageFromURL(item.ImageUrl);
-            //iconsCache.Add(item.ImageUrl, (Bitmap)e.Value);
             var request = WebRequest.Create(item.ImageUrl);
             using (var response = request.GetResponse())
             {
@@ -78,46 +73,6 @@ namespace GrawGoConsole.View
                     iconsCache.Add(item.ImageUrl, (Bitmap)e.Value);
                 }
             }
-        }
-
-        private void gridView1_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
-        {
-            //var view = sender as GridView;
-            //if (view == null) return;
-            //if (e.Column.Caption != "FirstName") return;
-            //var cellValue = e.Value.ToString() + " " + view.GetRowCellValue(e.RowHandle, view.Columns["LastName"]).ToString();
-            //view.SetRowCellValue(e.RowHandle, view.Columns["FullName"], cellValue);
-        }
-
-        
-
-        private async void gridView1_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
-        {
-            if (e.Column.FieldName == "ImageUrl")
-            {
-                _url = e.CellValue as string;
-               
-            }
-
-            //if (e.Column.FieldName == "Image")
-            //{
-            //    if (string.IsNullOrEmpty(_url))
-            //        return;
-            //    var pictureEdit = new RepositoryItemImageEdit();
-            //    pictureEdit.SizeMode = PictureSizeMode.Stretch;
-            //    pictureEdit.NullText = " ";
-            //    pictureEdit.Images = await GetImageFromURL(_url);
-            //    e.CellValue = pictureEdit;
-            //    gridControl1.RepositoryItems.Add(pictureEdit);
-            //}
-        }
-
-        private async Task<Image> GetImageFromURL(string url)
-        {
-            var httpWebRequest = (HttpWebRequest)HttpWebRequest.Create(url);
-            var httpWebReponse = (HttpWebResponse)await httpWebRequest.GetResponseAsync();
-            var stream = httpWebReponse.GetResponseStream();
-            return System.Drawing.Image.FromStream(stream);
         }
     }
 }

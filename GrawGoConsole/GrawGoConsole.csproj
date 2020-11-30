@@ -51,6 +51,14 @@
     <Reference Include="Firebase.Auth">
       <HintPath>..\Grawdevelopment.Backend\Shared\Firebase.Auth.dll</HintPath>
     </Reference>
+    <Reference Include="GrawDevelopment.Common, Version=1.1.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Grawdevelopment.Backend\Shared\GrawDevelopment.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GrawDevelopment.GeneralTypeDefinition, Version=2.3.2.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Grawdevelopment.Backend\Shared\GrawDevelopment.GeneralTypeDefinition.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
