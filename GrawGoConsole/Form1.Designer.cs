@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.controlGridUser1 = new GrawGoConsole.View.ControlGridUser();
             this.editFormUserControl1 = new DevExpress.XtraGrid.Views.Grid.EditFormUserControl();
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.controlGrid2 = new GrawGoConsole.View.ControlGridStation();
-            this.grawGO3 = new GrawGoConsole.GrawGO();
-            this.controlGridUser1 = new GrawGoConsole.View.ControlGridUser();
+            this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
+            this.controlFlights1 = new GrawGoConsole.View.ControlFlights();
             this.navigationPage3.SuspendLayout();
             this.navigationPage2.SuspendLayout();
             this.navigationPage1.SuspendLayout();
@@ -52,6 +52,15 @@
             this.navigationPage3.Name = "navigationPage3";
             this.navigationPage3.Size = new System.Drawing.Size(755, 409);
             // 
+            // controlGridUser1
+            // 
+            this.editFormUserControl1.SetBoundPropertyName(this.controlGridUser1, "");
+            this.controlGridUser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controlGridUser1.Location = new System.Drawing.Point(0, 0);
+            this.controlGridUser1.Name = "controlGridUser1";
+            this.controlGridUser1.Size = new System.Drawing.Size(755, 409);
+            this.controlGridUser1.TabIndex = 1;
+            // 
             // editFormUserControl1
             // 
             this.editFormUserControl1.Location = new System.Drawing.Point(554, 71);
@@ -63,7 +72,7 @@
             // 
             this.editFormUserControl1.SetBoundPropertyName(this.navigationPage2, "");
             this.navigationPage2.Caption = "navigationPage2";
-            this.navigationPage2.Controls.Add(this.grawGO3);
+            this.navigationPage2.Controls.Add(this.controlFlights1);
             this.navigationPage2.Name = "navigationPage2";
             this.navigationPage2.Size = new System.Drawing.Size(755, 409);
             // 
@@ -74,6 +83,15 @@
             this.navigationPage1.Controls.Add(this.controlGrid2);
             this.navigationPage1.Name = "navigationPage1";
             this.navigationPage1.Size = new System.Drawing.Size(755, 409);
+            // 
+            // controlGrid2
+            // 
+            this.editFormUserControl1.SetBoundPropertyName(this.controlGrid2, "");
+            this.controlGrid2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controlGrid2.Location = new System.Drawing.Point(0, 0);
+            this.controlGrid2.Name = "controlGrid2";
+            this.controlGrid2.Size = new System.Drawing.Size(755, 409);
+            this.controlGrid2.TabIndex = 0;
             // 
             // navigationPane1
             // 
@@ -104,32 +122,14 @@
             this.navigationPane1.Text = "navigationPane1";
             this.navigationPane1.TransitionType = DevExpress.Utils.Animation.Transitions.Fade;
             // 
-            // controlGrid2
+            // controlFlights1
             // 
-            this.editFormUserControl1.SetBoundPropertyName(this.controlGrid2, "");
-            this.controlGrid2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.controlGrid2.Location = new System.Drawing.Point(0, 0);
-            this.controlGrid2.Name = "controlGrid2";
-            this.controlGrid2.Size = new System.Drawing.Size(755, 409);
-            this.controlGrid2.TabIndex = 0;
-            // 
-            // grawGO3
-            // 
-            this.editFormUserControl1.SetBoundPropertyName(this.grawGO3, "");
-            this.grawGO3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grawGO3.Location = new System.Drawing.Point(0, 0);
-            this.grawGO3.Name = "grawGO3";
-            this.grawGO3.Size = new System.Drawing.Size(755, 409);
-            this.grawGO3.TabIndex = 0;
-            // 
-            // controlGridUser1
-            // 
-            this.editFormUserControl1.SetBoundPropertyName(this.controlGridUser1, "");
-            this.controlGridUser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.controlGridUser1.Location = new System.Drawing.Point(0, 0);
-            this.controlGridUser1.Name = "controlGridUser1";
-            this.controlGridUser1.Size = new System.Drawing.Size(755, 409);
-            this.controlGridUser1.TabIndex = 1;
+            this.editFormUserControl1.SetBoundPropertyName(this.controlFlights1, "");
+            this.controlFlights1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controlFlights1.Location = new System.Drawing.Point(0, 0);
+            this.controlFlights1.Name = "controlFlights1";
+            this.controlFlights1.Size = new System.Drawing.Size(755, 409);
+            this.controlFlights1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -156,11 +156,11 @@
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage3;
         private DevExpress.XtraGrid.Views.Grid.EditFormUserControl editFormUserControl1;
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage2;
-        private GrawGO grawGO3;
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage1;
         private DevExpress.XtraBars.Navigation.NavigationPane navigationPane1;
         private View.ControlGridStation controlGrid2;
         private View.ControlGridUser controlGridUser1;
+        private View.ControlFlights controlFlights1;
     }
 }
 

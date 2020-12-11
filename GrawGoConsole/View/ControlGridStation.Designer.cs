@@ -161,8 +161,6 @@
             this.gridColumn9.Caption = "ImageUrl";
             this.gridColumn9.FieldName = "ImageUrl";
             this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 8;
             // 
             // Image
             // 
@@ -172,7 +170,7 @@
             this.Image.Name = "Image";
             this.Image.UnboundType = DevExpress.Data.UnboundColumnType.Object;
             this.Image.Visible = true;
-            this.Image.VisibleIndex = 9;
+            this.Image.VisibleIndex = 8;
             // 
             // repositoryItemPictureEdit1
             // 

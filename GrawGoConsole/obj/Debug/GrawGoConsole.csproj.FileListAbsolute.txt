@@ -270,3 +270,4 @@ C:\Users\KuhnenS\source\repos\GrawGoConsole\GrawGoConsole\bin\Debug\Grawdevelopm
 C:\Users\KuhnenS\source\repos\GrawGoConsole\GrawGoConsole\obj\Debug\GrawGoConsole.exe.config
 C:\Users\KuhnenS\source\repos\GrawGoConsole\GrawGoConsole\obj\Debug\GrawGoConsole.View.ControlGridStation.resources
 C:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\obj\Debug\GrawGoConsole.View.ControlGridStation.resources
+c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\obj\Debug\GrawGoConsole.View.ControlFlights.resources

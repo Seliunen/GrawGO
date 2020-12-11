@@ -28,8 +28,8 @@ namespace GrawGoConsole.View
             gridView1.OptionsView.ShowGroupPanel = false;
             gridView1.OptionsBehavior.Editable = false;
             gridView1.OptionsView.ShowIndicator = false;
-            gridView1.OptionsView.EnableAppearanceEvenRow = true;
-            gridView1.Appearance.EvenRow.BackColor = Color.DimGray;
+            //gridView1.OptionsView.EnableAppearanceEvenRow = true;
+            //gridView1.Appearance.EvenRow.BackColor = Color.DimGray;
             var dataSource = new UserDatasource();
             await dataSource.GetData();
             gridControl1.DataSource = dataSource.GetDataSource();
