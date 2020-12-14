@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using Grawdevelopment.Backend;
 using GrawGoConsole.Controller;
 
 namespace GrawGoConsole.View
@@ -48,8 +49,13 @@ namespace GrawGoConsole.View
 
                 lookUpEdit1.EditValueChanged += (o, eventArgs) =>
                 {
-                    var item = sender as LookUpEdit;
-                    
+                    if (!(o is LookUpEdit item))
+                        return;
+                    var currentList = (List<Station>)item.Properties.DataSource;
+                    var stationItem = currentList[item.ItemIndex];
+
+                    //Flüge laden!!!
+
 
                 };
                 //gridControl1.DataSource = dataSource.GetDataSource();

@@ -238,14 +238,9 @@ c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\bin\Debug\System.Reactiv
 c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\bin\Debug\System.Reactive.Interfaces.dll
 c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\bin\Debug\Grawdevelopment.Backend.pdb
 c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\bin\Debug\Grawdevelopment.Backend.dll.config
-c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\bin\Debug\GrawDevelopment.GeneralTypeDefinition.pdb
 c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\bin\Debug\GrawDevelopment.Configuration.pdb
 c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\bin\Debug\GrawDevelopment.Configuration.dll.config
-c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\bin\Debug\GrawDevelopment.Common.pdb
-c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\bin\Debug\GrawDevelopment.Common.dll.config
 c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\bin\Debug\GrawDevelopment.Core.pdb
-c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\bin\Debug\GrawDevelopment.Formula.pdb
-c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\bin\Debug\GrawDevelopment.Formula.dll.config
 c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\obj\Debug\GrawGoConsole.csprojAssemblyReference.cache
 c:\Users\KotikA\Source\Repos\Zimti\GrawGO\GrawGoConsole\obj\Debug\GrawGoConsole.exe.config
 C:\Users\KuhnenS\source\repos\GrawGoConsole\GrawGoConsole\bin\Debug\Firebase.Auth.dll
