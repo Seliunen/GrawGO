@@ -55,6 +55,8 @@ namespace GrawGoConsole.View
                     var stationItem = currentList[item.ItemIndex];
 
                     //Flüge laden!!!
+                    //getFlightdata aus FirebaseLib
+                    //Flüge an Grid binden.....
 
 
                 };
